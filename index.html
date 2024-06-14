@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Suhu </title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <form id="tempForm">
+        <h2>Konversi Suhu</h2>
+        <p>masukan angka dan Drop down pada menu Konversi </p>
+        <p>Klik Reset untuk menghapus dan mengulangi dari awal</p>
+        <label for="tempInput" id="labelTempInput"><p>Masukkan suhu  : </p></label>
+        <input type="number" id="tempInput" name="tempInput" required>
+        <select id="conversionType">
+            <option value="celsiusToFahrenheit">Celsius to Fahrenheit</option>
+            <option value="fahrenheitToCelsius">Fahrenheit to Celsius</option>
+        </select>
+        <input type="submit" value="Convert">
+        <input type="reset" value="Reset">
+    </form>
+
+    <div id="result">
+        <p class="title">Hasil Konversi:</p>
+        <p id="conversionResult"></p>
+    </div>
+
+    <div id="calc">
+        <p class="title">Kalkulasi :</p>
+        <p id="resultCalc"></p>
+    </div>
+
+    <script src="js/script.js">
+    </script>
+
+</body>
+</html>
